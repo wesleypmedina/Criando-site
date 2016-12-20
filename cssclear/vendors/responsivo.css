@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+  body header .conteudo .logo-recipiente {
+    margin-right: 15%;
+    margin-left: 15%;
+    width: 70%; }
+
+  #slide .item img {
+    display: block;
+    width: 100%;
+    height: auto; } }
+
+/*# sourceMappingURL=responsivo.css.map */

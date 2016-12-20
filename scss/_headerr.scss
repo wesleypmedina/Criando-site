@@ -1,0 +1,59 @@
+body {
+  header{
+    padding: 25px;
+      .conteudo{
+        @include make-row();
+          .logo-recipiente{
+            @include make-xs-column(12);
+            @include make-sm-column(4);
+            @include make-md-column(3);
+          }
+        .pesquisa-recipiente-logo{
+          @include make-xs-column(10);
+          @include make-sm-column(4);
+          @include make-md-column(4);
+
+
+          @include make-xs-column-offset(0);
+          @include make-sm-column-offset(4);
+          @include make-md-column-offset(5);
+
+
+        }
+      }
+        input.form-control{
+          height: 45px;
+          font-size:13px;
+          font-family: 'Oxygen', sans-serif;
+          margin-top: 7px;
+          border: 1px solid #dddddd;
+          color: red;
+
+      }
+  }
+  div#navegacao{
+      div#navegacao-conteudo{
+        font-family: 'Oxygen', sans-serif;
+        @include make-md-column(12);
+        background-color:#ca3034 ;
+          .navbar{
+            border-radius:0;
+            box-shadow: none;
+            border: none;
+            background-color: #ca3034;
+            margin-bottom: 0;
+          }
+        ul.navbar-nav{
+          padding-left: 90px;
+          li{
+            a{color: #ffffff;font-family: 'Oxygen', sans-serif;}
+
+          }
+
+        }
+      }
+  }
+}
+a:hover {
+  background-color: $heading_tarja;
+}

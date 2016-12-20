@@ -1,0 +1,22 @@
+@media screen and (max-width: 768px) {
+  body {
+    header {
+      .conteudo {
+        .logo-recipiente {
+          margin-right:25%;
+          margin-left:5%;
+          width: 80%;
+            .pesquisa-recipiente-logo{
+              .form-control{
+              }
+            }
+        }
+      }
+    }
+  }
+  #slide .item img{
+    display: block;
+    width: 105%;
+    height: auto;
+  }
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oCAAqC;EAI7B,sCAAiB;IACf,YAAY,EAAC,GAAG;IAChB,WAAW,EAAC,GAAG;IACf,KAAK,EAAE,GAAG;;EAKlB,gBAAgB;IACd,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI",
+"sources": ["../../scss/vendors/responsivo.scss"],
+"names": [],
+"file": "responsivo.css"
+}

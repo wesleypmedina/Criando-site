@@ -1,0 +1,93 @@
+#servicos{
+  #servicos_itens{
+    .servicos_item{
+      @include make-xs-column(12);
+      @include make-sm-column(6);//INCLUINDO OS GRIDS DOS BLOCOS SERVIÇOS..
+      @include make-md-column(3);
+
+      cursor: pointer;
+      height:150px;
+      background-color: #cccccc;
+      margin-bottom: 30px;
+      margin-right: 0;
+      background-clip: content-box;
+
+      a{
+        display: block;
+        height: 150px;
+        width: 100%;
+        text-align: center;
+
+
+          span.icon{
+            display: inline-block;
+            position: relative;
+            @extend .sprite-servicos;
+
+
+            &.icon--config{
+                @include sprite-define(70px, 70px, -5px, -129px);
+              top:(150px-70)/2 ;
+            }
+            &.icon--camera{
+              @include sprite-define(70px, 52px, -5px, -5px);
+              top:(150px-52)/2 ;
+            }
+            &.icon--imagem{
+              @include sprite-define(70px, 66px, -5px, -289px);
+              top:(150px-66)/2 ;
+            }
+            &.icon--pc{
+              @include sprite-define(70px, 62px, -5px,- 441px) ;
+              top:(150px-62)/2 ;
+            }
+          }
+
+        span.titulo{
+          color: #FFFFFF;
+          font-size: 26px;
+          font-family: $font_principal;
+          position: absolute;
+          width: 100%;
+          display: none;
+          text-align:center;
+          margin-top: 10px;
+        }
+        &:hover{
+          span.titulo{
+            display: block;
+          }
+        }
+
+        &:hover {
+          span.icon{
+            top: 20px;
+            transition:top 0.5s linear;
+
+            &.icon--config{
+              @include sprite-define(70px, 70px, -5px, -208px);
+
+            }
+            &.icon--camera{
+              @include sprite-define(70px, 52px, -5px, -67px);
+
+            }
+            &.icon--imagem{
+              @include sprite-define(70px, 66px, -5px, -366px);
+
+            }
+            &.icon--pc{
+              @include sprite-define(70px, 62px, -5px,-513px) ;
+
+            }
+          }
+        }
+      }
+
+        &:hover{
+          background-color: $heading_tarja;
+          transition: all 1s linear;
+        }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+a {
+  outline: none;
+  img{
+    border: none;
+  }
+}
+
+.container{
+  .conteudo {
+    padding-left: 45px;
+    h2.heading {
+      margin: 0;
+      margin-bottom: 30px;
+      font :bold 18px $font_principal; //1= tipo da linha 2=tamanho 3=fonte-family
+      color: $heading_color;
+      position: relative;
+      line-height: 30px;
+      text-indent: 14px;
+        span{
+          display: inline-block;
+          width: 8px;
+          height: 30px;
+          background-color:$heading_tarja;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+        }
+    }
+  }
+}
+
+.sprite-servicos{
+  background-image: url("../imagens/spritesheet.png");
+  background-repeat: no-repeat ;
+}
+
+.widget{
+  padding-left: 825px;
+  h3.widget_title{
+    margin: 0;
+    margin-bottom: 30px;
+    font :bold 18px $font_principal; //1= tipo da linha 2=tamanho 3=fonte-family
+    color: $heading_color;
+    position: relative;
+    line-height: 30px;
+    text-indent: 8px;
+    span{
+      display: inline-block;
+      width: 4px;
+      height: 30px;
+      background-color:$heading_tarja;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+
+}
